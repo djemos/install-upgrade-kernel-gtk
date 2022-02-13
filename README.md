@@ -11,7 +11,9 @@ system.
 
 To download and create the package type:
 mkdir build
+
 cd build
+
 
 git clone https://github.com/djemos/install-upgrade-kernel-gtk.git
 mv install-upgrade-kernel-gtk/SLKBUILD ./
