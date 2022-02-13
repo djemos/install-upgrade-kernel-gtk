@@ -10,6 +10,7 @@ install-upgarade-kernel-gtk can be used on any slackware or slackware based
 system. 
 
 To download and create the package type:
+
 mkdir build
 
 cd build
