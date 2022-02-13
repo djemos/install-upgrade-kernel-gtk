@@ -5,5 +5,5 @@ install-upgrade-kernel-gtk is a front-end, the gui tool of the script
 which is written in c using glade and gtk3.
 It is used for installations of slackel on internal disks.
 
-install-upgarade-kernel can be used on any slackware or slackware based
+install-upgarade-kernel-gtk can be used on any slackware or slackware based
 system. 
