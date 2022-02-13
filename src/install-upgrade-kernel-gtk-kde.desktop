@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+
+Name=install-upgrade-kernel-gtk
+Name[el]=Εγκατάσταση-ενημέρωση πυρήνα
+
+Categories=System
+Exec=kdesu /usr/sbin/install-upgrade-kernel-gtk
+Icon=install-upgrade-kernel-gtk
+OnlyShowIn=KDE
+

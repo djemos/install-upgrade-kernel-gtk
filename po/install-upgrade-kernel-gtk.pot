@@ -1,0 +1,89 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-02-13 14:12+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: src/install-upgrade-kernel-gtk.ui:11
+msgid "Operation completed."
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:56
+msgid "_File"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:86
+msgid "_Help"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:125
+msgid ""
+"Install/Upgrade huge kernel\n"
+"Do not run this program for installation on external ssd disk\n"
+"or USB stick. Your system will not boot after reboot."
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:157
+msgid "huge_kernel"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:172
+msgid "install_huge"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:187
+msgid "upgrade_huge"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:237
+msgid ""
+"Install/Upgrade generic kernel\n"
+"Do not run this program for installation on external ssd disk\n"
+"or USB stick. Your system will not boot after reboot."
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:268
+msgid "generic_kernel"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:283
+msgid "install_generic"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:298
+msgid "upgrade_generic"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:453
+msgid "Copyright © 2022  Dimitris Tzemos"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:1130
+msgid "translator-credits"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:1159
+#: src/install-upgrade-kernel-gtk.desktop.in.h:1
+msgid "install-upgrade-kernel"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:1168
+msgid "Error encountered."
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk-kde.desktop.in.h:1
+msgid "install-upgrade-kernel-gtk"
+msgstr ""
