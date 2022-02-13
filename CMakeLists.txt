@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 2.4)
+cmake_minimum_required(VERSION 3.5.2)
 
 set (PROJECT_NAME "install-upgrade-kernel-gtk")
 project (${PROJECT_NAME})
