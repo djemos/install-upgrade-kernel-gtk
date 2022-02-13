@@ -10,14 +10,12 @@ install-upgarade-kernel-gtk can be used on any slackware or slackware based
 system. 
 
 To download and create the package type:
-
 mkdir build
-
 cd build
-
-
 git clone https://github.com/djemos/install-upgrade-kernel-gtk.git
+
 mv install-upgrade-kernel-gtk/SLKBUILD ./
+
 tar -cvjSf install-upgrade-kernel-gtk.tar.bz2 install-upgrade-kernel-gtk
 
 fakeroot slkbuild -X
