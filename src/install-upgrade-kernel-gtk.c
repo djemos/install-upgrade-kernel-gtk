@@ -39,8 +39,6 @@ void do_action (gboolean doit) {
 	generic_kernel = (GtkWidget *) gtk_builder_get_object(widgetstree, "generic_kernel");
 	install_generic = (GtkWidget *) gtk_builder_get_object(widgetstree, "install_generic");
 	upgrade_generic = (GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_generic");
-	
-	viewport = (GtkWidget *) gtk_builder_get_object(widgetstree, "viewport");
 		
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (huge_kernel))) {
 		kernel_type = g_strdup ("huge") ;
