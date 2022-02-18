@@ -20,7 +20,7 @@ slackdesc=\
 
 build() {
 	cd $SRC/$pkgname
-	
+	export LDFLAGS='-export-dynamic'
 	cmake -DCMAKE_INSTALL_PREFIX=/usr .
 		
 	make || return 1
