@@ -1122,6 +1122,7 @@ Public License instead of this License.  But first, please read
 </property>
     <property name="authors">Copyright © 2022  Dimitris Tzemos</property>
     <property name="translator_credits" translatable="yes">translator-credits</property>
+    <property name="logo_icon_name">install-upgrade-kernel-gtk</property>
     <signal name="response" handler="gtk_widget_hide" swapped="no"/>
     <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
     <child internal-child="vbox">
