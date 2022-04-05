@@ -1,12 +1,14 @@
 /*
 install-upgrade-kernel-gtk.c from Slackel <http://www.slackel.gr>
+
 Copyright (C) 2022 Dimitris Tzemos <dijemos@gmail.com>
 
-This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, 
+This program is free software: you can redistribute it and/or modify it under the terms
+of the GNU General Public License as published by the Free Software Foundation,
 either version 2 of the License, or (at your option) any later version.
-
-This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY 
-or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License at <http://www.gnu.org/licenses/> for more details.
+This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY;
+without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. 
+See the GNU General Public License at <http://www.gnu.org/licenses/> for more details.
 */
 
 #include <gtk/gtk.h>
@@ -27,11 +29,11 @@ or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License at <htt
 
 
 void do_action (gboolean doit) {
-			
+	
 	gchar *commandline, **command, *output, *kernel_action_mode,*kernel_type;
 	
 	GtkWidget *huge_kernel, *generic_kernel, *install_huge, *upgrade_huge, *install_generic, *upgrade_generic, *viewport;
-	
+		
 	huge_kernel = (GtkWidget *) gtk_builder_get_object(widgetstree, "huge_kernel");
 	install_huge = (GtkWidget *) gtk_builder_get_object(widgetstree, "install_huge");
 	upgrade_huge = (GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_huge");
@@ -39,6 +41,10 @@ void do_action (gboolean doit) {
 	generic_kernel = (GtkWidget *) gtk_builder_get_object(widgetstree, "generic_kernel");
 	install_generic = (GtkWidget *) gtk_builder_get_object(widgetstree, "install_generic");
 	upgrade_generic = (GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_generic");
+		
+	fullpercent = FALSE;
+	pulsebar = TRUE;
+	progressbar_handler_id = g_timeout_add(100, progressbar_handler, NULL);
 		
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (huge_kernel))) {
 		kernel_type = g_strdup ("huge") ;
@@ -69,7 +75,7 @@ void do_action (gboolean doit) {
 
 		g_spawn_async(NULL, command, NULL, G_SPAWN_SEARCH_PATH|G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL, &pid, NULL);
 		g_child_watch_add(pid, on_process_end, NULL); 
-		
+			
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "huge_kernel"), FALSE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_huge"), FALSE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_huge"), FALSE);
@@ -87,6 +93,7 @@ void on_ok_clicked(GtkWidget *widget, gpointer user_data) {
 }
 
 ////
+
 void on_cancel_btn_clicked (GtkWidget *widget, gpointer user_data) {
 	kill (pid, SIGTERM);
 }
@@ -101,8 +108,15 @@ void on_exitp (GtkWidget *widget, gpointer user_data) {
 
 void on_process_end (GPid thepid, gint status, gpointer data) {
 	GtkWidget *dialog;
-
+	GtkProgressBar *progressbar;
+	gdouble progressfraction;
+	gchar *s_progressfraction;
+	
 	pid = 0;
+	g_source_remove(progressbar_handler_id);
+	progressbar = (GtkProgressBar *) gtk_builder_get_object(widgetstree,"progressbar");
+	gtk_progress_bar_set_fraction(progressbar, 0);
+	gtk_progress_bar_set_text(progressbar, "");
 	
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "huge_kernel"), TRUE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_huge"), TRUE);
@@ -118,8 +132,36 @@ void on_process_end (GPid thepid, gint status, gpointer data) {
 	} else {
 		dialog = (GtkWidget *) gtk_builder_get_object(widgetstree, "dialogerror");
 	}
-	
 	gtk_widget_show(dialog);
+	
+}
+
+gboolean progressbar_handler(gpointer data) {
+	GtkProgressBar *progressbar;
+	gchar *output;
+	gdouble progressfraction;
+	gchar *s_progressfraction;
+	
+	progressbar = (GtkProgressBar *) gtk_builder_get_object(widgetstree,"progressbar");
+
+	if (pulsebar) {
+		gtk_progress_bar_pulse(progressbar);
+	} else {
+		if (progressfraction >= 100) {
+			gtk_progress_bar_set_text(progressbar, "100 %");
+			gtk_progress_bar_set_fraction(progressbar, 1.0);
+			fullpercent = TRUE;
+			pulsebar = TRUE;
+			g_source_remove(progressbar_handler_id);
+			progressbar_handler_id = g_timeout_add(100, progressbar_handler, NULL);
+		} else {
+			gtk_progress_bar_set_fraction(progressbar, progressfraction / 100);
+			s_progressfraction = g_strdup_printf("%2.0f %c", progressfraction, '%');
+			gtk_progress_bar_set_text(progressbar, s_progressfraction);
+			g_free(s_progressfraction);
+		}
+	}
+	return TRUE;
 }
 
 void on_about_activate (GtkWidget *widget, gpointer user_data) {
