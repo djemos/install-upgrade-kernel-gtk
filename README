@@ -17,10 +17,10 @@ fakeroot slkbuild -X
 
 To install the package type: 
 for 64bit:
-sudo spkg install-upgrade-kernel-gtk-1.0-x86_64-1dj.txz   
+sudo spkg install-upgrade-kernel-gtk-2.0-x86_64-1dj.txz   
 
 or for 32bit:
-sudo spkg install-upgrade-kernel-gtk-1.0-i586-1dj.txz  
+sudo spkg install-upgrade-kernel-gtk-2.0-i586-1dj.txz  
 
 
 Copyright (C) 2022 Dimitris Tzemos <dijemos@gmail.com>
