@@ -25,8 +25,8 @@
 ###################################################################
 ####                      install-upgrade-kernel               ####
 ###################################################################
-# script to install/upgrade new kernel images 			  #
-# when kernel upgrade on repos				          #
+# script to install/upgrade new kernel images                     #
+# when kernel upgrade on repos                                    #
 # when installing/upgrading generic kernel an initrd is created   #
 # This script created for slackel/salix                           #
 #                                                                 #
@@ -39,7 +39,7 @@ SCRIPT=$(readlink -f "$SCRIPT")
 VER=1.1.1
 
 init(){
-		
+
 		if [ "$UID" != "0" ]; then
 			echo "You need to be root to run this"
 			exit 1
@@ -54,7 +54,7 @@ init(){
         export TEXTDOMAIN="install-upgrade-kernel"
         export TEXTDOMAINDIR="/usr/share/locale"
         . gettext.sh
-        
+
         # Path needs to be extended in case you're only half a root :)
         export PATH="/usr/sbin:/sbin:${PATH}"
 }
@@ -74,12 +74,12 @@ usage(){
 checkoptions(){
         flag=$1
         flagr=$2
-        
+
 		if [ $# -gt 2 ] ; then
 				echo "`eval_gettext 'ERROR: Too many arguments'`"
 				usage
 		fi
-		
+
         if [[ $flag = "install" ]]; then
 			export flag="install"
         elif [[ $flag = "upgrade" ]]; then
@@ -87,17 +87,17 @@ checkoptions(){
 		else
 		   usage
         fi
- 
+
         #if switch is unknown or if asking for help
 		if [[ $flagr = "help" ]] || [[ $flag = "h" ]]; then
-			usage  
+			usage
 		elif [[ $flagr = "huge" ]]; then
 			export flagr="huge"
 	    elif [[ $flagr = "generic" ]]; then
 			export flagr="generic"
 		else
 			usage
-		fi		
+		fi
 }
 execute_script(){
 if [ -z "$startdir" ]; then
@@ -124,7 +124,7 @@ elif [ "$flagr" == "huge" ]; then
 		slapt-get -i --reinstall -d kernel-headers kernel-huge kernel-modules
 	else
 		slapt-get -i --reinstall -d kernel-headers kernel-huge kernel-huge-smp kernel-modules kernel-modules-smp
-	fi 
+	fi
 fi
 
 if [ `uname -m` == "x86_64" ]; then
@@ -158,13 +158,13 @@ fi
 
 if [ -f /etc/lsb-release ]; then
 	sed -i "s/DISTRIB_DESCRIPTION=.*/DISTRIB_DESCRIPTION='Slackel Linux $kv'/" /etc/lsb-release
-fi	
+fi
 
 if [ "$flag" == "install" ]; then
 	installpkg $packagesdirectory/*
 	kv=`ls -l /boot/vmlinuz | cut -f2 -d'>' | sed s/^[^0-9]*//`
 	if [ "$flagr" == "generic" ]; then
-		echo "creating /boot/initrd-${kv}.gz" 
+		echo "creating /boot/initrd-${kv}.gz"
 		mkinitrd -c -o /boot/initrd-${kv}.gz -k $kv -m $moduleslist >/dev/null 2>&1
 		rm -rf /boot/initrd-tree/
 	else
@@ -178,7 +178,7 @@ elif [ "$flag" == "upgrade" ]; then
 	upgradepkg $packagesdirectory/*
 	kv=`ls -l /boot/vmlinuz | cut -f2 -d'>' | sed s/^[^0-9]*//`
 	if [ "$flagr" == "generic" ];then
-		echo "creating /boot/initrd-${kv}.gz" 
+		echo "creating /boot/initrd-${kv}.gz"
 		mkinitrd -c -o /boot/initrd-${kv}.gz -k $kv -m $moduleslist >/dev/null 2>&1
 		rm -rf /boot/initrd-tree/
 	else
