@@ -1,0 +1,95 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: install-upgrade-kernel-gtk\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-11 16:22+0300\n"
+"PO-Revision-Date: 2022-02-25 17:34+0200\n"
+"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
+"Language-Team: Portuguese\n"
+"Language: pt_PT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Crowdin-Project: install-upgrade-kernel-gtk\n"
+"X-Crowdin-Project-ID: 499902\n"
+"X-Crowdin-Language: pt-PT\n"
+"X-Crowdin-File: install-upgrade-kernel-gtk.pot\n"
+"X-Crowdin-File-ID: 10\n"
+"X-Generator: Poedit 3.0\n"
+
+#: src/install-upgrade-kernel-gtk.ui:11
+msgid "Operation completed."
+msgstr "Operação concluída."
+
+#: src/install-upgrade-kernel-gtk.ui:56
+msgid "_File"
+msgstr "_Ficheiro"
+
+#: src/install-upgrade-kernel-gtk.ui:86
+msgid "_Help"
+msgstr "_Ajuda"
+
+#: src/install-upgrade-kernel-gtk.ui:125
+msgid ""
+"Install/Upgrade huge kernel\n"
+"Do not run this program for installation on external ssd disk\n"
+"or USB stick. Your system will not boot after reboot."
+msgstr ""
+"Instalar/atualizar o kernel huge\n"
+"Não executar este programa para instalação em disco ssd externo\n"
+"ou pen USB. O sistema não arranca após reiniciar."
+
+#: src/install-upgrade-kernel-gtk.ui:157
+msgid "huge_kernel"
+msgstr "huge_kernel"
+
+#: src/install-upgrade-kernel-gtk.ui:172
+msgid "install_huge"
+msgstr "install_huge"
+
+#: src/install-upgrade-kernel-gtk.ui:188
+msgid "upgrade_huge"
+msgstr "upgrade_huge"
+
+#: src/install-upgrade-kernel-gtk.ui:238
+msgid ""
+"Install/Upgrade generic kernel\n"
+"Do not run this program for installation on external ssd disk\n"
+"or USB stick. Your system will not boot after reboot."
+msgstr ""
+"Instalar/atualizar o kernel generic\n"
+"Não executar este programa para instalação em disco ssd externo\n"
+"ou pen USB. O sistema não arranca após reiniciar."
+
+#: src/install-upgrade-kernel-gtk.ui:269
+msgid "generic_kernel"
+msgstr "generic_kernel"
+
+#: src/install-upgrade-kernel-gtk.ui:285
+msgid "install_generic"
+msgstr "install_generic"
+
+#: src/install-upgrade-kernel-gtk.ui:301
+msgid "upgrade_generic"
+msgstr "upgrade_generic"
+
+#: src/install-upgrade-kernel-gtk.ui:1132
+msgid "translator-credits"
+msgstr "Hugo Carvalho <hugokarvalho@hotmail.com>"
+
+#: src/install-upgrade-kernel-gtk.ui:1162
+#: src/install-upgrade-kernel-gtk.desktop.in.h:1
+msgid "install-upgrade-kernel"
+msgstr "install-upgrade-kernel"
+
+#: src/install-upgrade-kernel-gtk.ui:1171
+msgid "Error encountered."
+msgstr "Erro encontrado."
+
+#: src/install-upgrade-kernel-gtk-kde.desktop.in.h:1
+msgid "install-upgrade-kernel-gtk"
+msgstr "install-upgrade-kernel-gtk"
+
+#~ msgid "Copyright © 2022  Dimitris Tzemos"
+#~ msgstr "Copyright © 2022  Dimitris Tzemos"
