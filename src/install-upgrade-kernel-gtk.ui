@@ -452,7 +452,7 @@ or USB stick. Your system will not boot after reboot.</property>
     <property name="type_hint">dialog</property>
     <property name="transient_for">mainwindow</property>
     <property name="program_name">install-upgrade-kernel</property>
-    <property name="copyright" translatable="yes">Copyright © 2022  Dimitris Tzemos</property>
+    <property name="copyright">Copyright © 2022  Dimitris Tzemos</property>
     <property name="license">         GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
