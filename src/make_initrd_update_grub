@@ -15,4 +15,7 @@ moduleslist="loop:xhci-pci:ohci-pci:ehci-pci:xhci-hcd:uhci-hcd:ehci-hcd:mmc-core
 				
 mkinitrd -c -o /boot/initrd.gz -k $kv -m $moduleslist >/dev/null 2>&1
 rm -rf /boot/initrd-tree/
-update-grub
+if [ -f /usr/sbin/update-grub ]; then
+		echo "updating grub"
+		update-grub
+fi
