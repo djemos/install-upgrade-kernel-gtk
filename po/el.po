@@ -1,0 +1,126 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-04-26 20:10+0300\n"
+"PO-Revision-Date: 2022-04-26 20:14+0300\n"
+"Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
+"Language-Team: \n"
+"Language: el_GR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0.1\n"
+"X-Poedit-Basepath: .\n"
+
+#: src/install-upgrade-kernel-gtk.ui:27 src/install-upgrade-kernel-gtk.ui:539
+#: src/install-upgrade-kernel-gtk.ui:1334
+#: src/install-upgrade-kernel-gtk.desktop.in.h:1
+msgid "install-upgrade-kernel"
+msgstr "εγκατάσταση-ενημέρωση πυρήνα"
+
+#: src/install-upgrade-kernel-gtk.ui:46
+msgid "_File"
+msgstr "_Αρχείο"
+
+#: src/install-upgrade-kernel-gtk.ui:61
+msgid "Quit"
+msgstr "Εξοδος"
+
+#: src/install-upgrade-kernel-gtk.ui:77
+msgid "_Help"
+msgstr "_Βοήθεια"
+
+#: src/install-upgrade-kernel-gtk.ui:85
+msgid "About"
+msgstr "Περί"
+
+#: src/install-upgrade-kernel-gtk.ui:131
+msgid ""
+"Install/Upgrade huge kernel\n"
+"Do not run this program for installation on external ssd disk\n"
+"or USB stick. Your system will not boot after reboot."
+msgstr ""
+"Εγκατάσταση/Ενημέρωση huge πυρήνα\n"
+"Μην εκτελείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο\n"
+"ή USB stick. Το σύστημά σας δεν θα εκκινήσει μετά την επανεκκίνηση."
+
+#: src/install-upgrade-kernel-gtk.ui:182
+msgid "huge_kernel"
+msgstr "huge πυρήνας"
+
+#: src/install-upgrade-kernel-gtk.ui:197
+msgid "install_huge"
+msgstr "εγκατάσταση huge πυρήνα"
+
+#: src/install-upgrade-kernel-gtk.ui:212
+msgid "upgrade_huge"
+msgstr "ενημέρωση huge πυρήνα"
+
+#: src/install-upgrade-kernel-gtk.ui:278
+msgid ""
+"Install/Upgrade generic kernel\n"
+"Do not run this program for installation on external ssd disk\n"
+"or USB stick. Your system will not boot after reboot."
+msgstr ""
+"Εγκατάσταση/Ενημέρωση generic πυρήνα\n"
+"Μην εκτελείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο\n"
+"ή USB stick. Το σύστημά σας δεν θα εκκινήσει μετά την επανεκκίνηση."
+
+#: src/install-upgrade-kernel-gtk.ui:329
+msgid "generic_kernel"
+msgstr "generic πυρήνας"
+
+#: src/install-upgrade-kernel-gtk.ui:344
+msgid "install_generic"
+msgstr "εγκατάσταση generic πυρήνα"
+
+#: src/install-upgrade-kernel-gtk.ui:359
+msgid "upgrade_generic"
+msgstr "ενημέρωση generic πυρήνα"
+
+#: src/install-upgrade-kernel-gtk.ui:424
+msgid "Execute"
+msgstr "Εκτέλεση"
+
+#: src/install-upgrade-kernel-gtk.ui:440
+msgid "Stop"
+msgstr "Διακοπή"
+
+#: src/install-upgrade-kernel-gtk.ui:1222
+msgid "translator-credits"
+msgstr "Δημήτρης Τζέμος <dijemos~at~gmail~dot~com>"
+
+#: src/install-upgrade-kernel-gtk.ui:1252
+msgid "Error!"
+msgstr "Σφάλμα!"
+
+#: src/install-upgrade-kernel-gtk.ui:1271
+#: src/install-upgrade-kernel-gtk.ui:1352
+msgid "OK"
+msgstr "Εντάξει"
+
+#: src/install-upgrade-kernel-gtk.ui:1312
+msgid "Error encountered."
+msgstr "Συνέβη σφάλμα."
+
+#: src/install-upgrade-kernel-gtk.ui:1393
+msgid "Operation completed."
+msgstr "Η εγκατάσταση τελείωσε."
+
+#: src/install-upgrade-kernel-gtk-kde.desktop.in.h:1
+msgid "install-upgrade-kernel-gtk"
+msgstr "εγκατάσταση-ενημέρωση πυρήνα"
+
+#~ msgid "S_top"
+#~ msgstr "Δ_ιακοπή"
+
+#~ msgid "Copyright © 2022  Dimitris Tzemos"
+#~ msgstr "Copyright © 2022  Dimitris Tzemos"
+
+#~ msgid "Install/Upgrade huge kernel"
+#~ msgstr "Εγκατάσταση/Ενημέρωση huge πυρήνα"
+
+#~ msgid "Install/Upgrade generic kernel"
+#~ msgstr "Εγκατάσταση/Ενημέρωση generic πυρήνα"
