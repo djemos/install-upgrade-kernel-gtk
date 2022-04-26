@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Type=Application
+
+Name=install-upgrade-kernel-ext-usb-gtk
+Name[el]=Εγκατάσταση-ενημέρωση πυρήνα σε εξωτερικό δίσκο ή usb
+
+Categories=System
+Exec=kdesu /usr/sbin/install-upgrade-kernel-ext-usb-gtk
+Icon=install-upgrade-kernel-ext-usb-gtk
+OnlyShowIn=KDE
+
