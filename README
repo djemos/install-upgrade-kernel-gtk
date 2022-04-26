@@ -1,11 +1,3 @@
-install-upgrade-kernel-gtk is a gui tool of the script that make easy to install kernel packages 
-without removing the previous kernel packages and upgrading grub menus boot loader.
-It is written in C using glade and gtk3.
-It is used for installations of Slackel on internal disks.
-
-install-upgrade-kernel-gtk can be used on any slackware or slackware based
-system. 
-
 # install-upgrade-kernel-gtk
 install-upgrade-kernel-gtk is a gui tool which is written in C using glade and gtk3.
 It is used for installations of slackel or salix on internal disks.
