@@ -2,7 +2,7 @@ cmake_minimum_required(VERSION 3.5.2)
 
 set (PROJECT_NAME "install-upgrade-kernel-gtk")
 project (${PROJECT_NAME})
-set (PROJECT_VERSION "3.0")
+set (PROJECT_VERSION "4.0")
 
 add_subdirectory (po)
 add_subdirectory (src)
