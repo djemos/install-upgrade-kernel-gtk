@@ -1,7 +1,7 @@
 #!/bin/bash
 # Gettext internationalization
 #
-# Copyright 2022  Dimitris Tzemos, GR
+# Copyright 2023  Dimitris Tzemos, GR
 #!/bin/bash
 # All rights reserved.
 #
@@ -118,13 +118,13 @@ if [ "$flagr" == "generic" ]; then
 	if [ `uname -m` == "x86_64" ]; then
 		slapt-get -i --reinstall -d kernel-headers kernel-generic kernel-modules
 	else
-		slapt-get -i --reinstall -d kernel-headers kernel-generic kernel-generic-smp kernel-modules kernel-modules-smp
+		slapt-get -i --reinstall -d kernel-headers kernel-generic kernel-modules 
 	fi
 elif [ "$flagr" == "huge" ]; then
 	if [ `uname -m` == "x86_64" ]; then
 		slapt-get -i --reinstall -d kernel-headers kernel-huge kernel-modules
 	else
-		slapt-get -i --reinstall -d kernel-headers kernel-huge kernel-huge-smp kernel-modules kernel-modules-smp
+		slapt-get -i --reinstall -d kernel-headers kernel-huge  kernel-modules 
 	fi
 fi
 
@@ -158,13 +158,13 @@ else
 	
 	if [ "$flagr" == "huge" ]; then
 		cd $packagesdirectory
-		f=`ls kernel-huge-smp*.txz`
-		kv=`echo $f | cut -d'-' -f 4`
+		f=`ls kernel-huge*.txz`
+		kv=`echo $f | cut -d'-' -f 3`
 		cd $startdir
 	elif [ "$flagr" == "generic" ]; then
 		cd $packagesdirectory
-		f=`ls kernel-generic-smp*.txz`
-		kv=`echo $f | cut -d'-' -f 4`
+		f=`ls kernel-generic*.txz`
+		kv=`echo $f | cut -d'-' -f 3`
 		cd $startdir
 	fi
 fi
