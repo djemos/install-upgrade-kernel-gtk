@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2022-04-26 20:10+0300\n"
-"PO-Revision-Date: 2022-04-26 20:14+0300\n"
+"POT-Creation-Date: 2024-09-13 13:33+0300\n"
+"PO-Revision-Date: 2024-09-13 13:52+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: \n"
 "Language: el_GR\n"
@@ -14,8 +14,8 @@ msgstr ""
 "X-Generator: Poedit 3.0.1\n"
 "X-Poedit-Basepath: .\n"
 
-#: src/install-upgrade-kernel-gtk.ui:27 src/install-upgrade-kernel-gtk.ui:539
-#: src/install-upgrade-kernel-gtk.ui:1334
+#: src/install-upgrade-kernel-gtk.ui:27 src/install-upgrade-kernel-gtk.ui:429
+#: src/install-upgrade-kernel-gtk.ui:1239
 #: src/install-upgrade-kernel-gtk.desktop.in.h:1
 msgid "install-upgrade-kernel"
 msgstr "εγκατάσταση-ενημέρωση πυρήνα"
@@ -36,29 +36,7 @@ msgstr "_Βοήθεια"
 msgid "About"
 msgstr "Περί"
 
-#: src/install-upgrade-kernel-gtk.ui:131
-msgid ""
-"Install/Upgrade huge kernel\n"
-"Do not run this program for installation on external ssd disk\n"
-"or USB stick. Your system will not boot after reboot."
-msgstr ""
-"Εγκατάσταση/Ενημέρωση huge πυρήνα\n"
-"Μην εκτελείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο\n"
-"ή USB stick. Το σύστημά σας δεν θα εκκινήσει μετά την επανεκκίνηση."
-
-#: src/install-upgrade-kernel-gtk.ui:182
-msgid "huge_kernel"
-msgstr "huge πυρήνας"
-
-#: src/install-upgrade-kernel-gtk.ui:197
-msgid "install_huge"
-msgstr "εγκατάσταση huge πυρήνα"
-
-#: src/install-upgrade-kernel-gtk.ui:212
-msgid "upgrade_huge"
-msgstr "ενημέρωση huge πυρήνα"
-
-#: src/install-upgrade-kernel-gtk.ui:278
+#: src/install-upgrade-kernel-gtk.ui:168
 msgid ""
 "Install/Upgrade generic kernel\n"
 "Do not run this program for installation on external ssd disk\n"
@@ -68,50 +46,68 @@ msgstr ""
 "Μην εκτελείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο\n"
 "ή USB stick. Το σύστημά σας δεν θα εκκινήσει μετά την επανεκκίνηση."
 
-#: src/install-upgrade-kernel-gtk.ui:329
+#: src/install-upgrade-kernel-gtk.ui:219
 msgid "generic_kernel"
 msgstr "generic πυρήνας"
 
-#: src/install-upgrade-kernel-gtk.ui:344
+#: src/install-upgrade-kernel-gtk.ui:233
 msgid "install_generic"
 msgstr "εγκατάσταση generic πυρήνα"
 
-#: src/install-upgrade-kernel-gtk.ui:359
+#: src/install-upgrade-kernel-gtk.ui:248
 msgid "upgrade_generic"
 msgstr "ενημέρωση generic πυρήνα"
 
-#: src/install-upgrade-kernel-gtk.ui:424
+#: src/install-upgrade-kernel-gtk.ui:313
 msgid "Execute"
 msgstr "Εκτέλεση"
 
-#: src/install-upgrade-kernel-gtk.ui:440
+#: src/install-upgrade-kernel-gtk.ui:329
 msgid "Stop"
 msgstr "Διακοπή"
 
-#: src/install-upgrade-kernel-gtk.ui:1222
+#: src/install-upgrade-kernel-gtk.ui:1112
 msgid "translator-credits"
 msgstr "Δημήτρης Τζέμος <dijemos~at~gmail~dot~com>"
 
-#: src/install-upgrade-kernel-gtk.ui:1252
+#: src/install-upgrade-kernel-gtk.ui:1147
 msgid "Error!"
 msgstr "Σφάλμα!"
 
-#: src/install-upgrade-kernel-gtk.ui:1271
-#: src/install-upgrade-kernel-gtk.ui:1352
+#: src/install-upgrade-kernel-gtk.ui:1170
+#: src/install-upgrade-kernel-gtk.ui:1261
 msgid "OK"
 msgstr "Εντάξει"
 
-#: src/install-upgrade-kernel-gtk.ui:1312
+#: src/install-upgrade-kernel-gtk.ui:1212
 msgid "Error encountered."
 msgstr "Συνέβη σφάλμα."
 
-#: src/install-upgrade-kernel-gtk.ui:1393
+#: src/install-upgrade-kernel-gtk.ui:1303
 msgid "Operation completed."
 msgstr "Η εγκατάσταση τελείωσε."
 
 #: src/install-upgrade-kernel-gtk-kde.desktop.in.h:1
 msgid "install-upgrade-kernel-gtk"
 msgstr "εγκατάσταση-ενημέρωση πυρήνα"
+
+#~ msgid ""
+#~ "Install/Upgrade huge kernel\n"
+#~ "Do not run this program for installation on external ssd disk\n"
+#~ "or USB stick. Your system will not boot after reboot."
+#~ msgstr ""
+#~ "Εγκατάσταση/Ενημέρωση huge πυρήνα\n"
+#~ "Μην εκτελείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο\n"
+#~ "ή USB stick. Το σύστημά σας δεν θα εκκινήσει μετά την επανεκκίνηση."
+
+#~ msgid "huge_kernel"
+#~ msgstr "huge πυρήνας"
+
+#~ msgid "install_huge"
+#~ msgstr "εγκατάσταση huge πυρήνα"
+
+#~ msgid "upgrade_huge"
+#~ msgstr "ενημέρωση huge πυρήνα"
 
 #~ msgid "S_top"
 #~ msgstr "Δ_ιακοπή"

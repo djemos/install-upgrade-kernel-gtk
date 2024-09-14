@@ -6,6 +6,8 @@ It is used for installations of Slackel on internal disks.
 install-upgrade-kernel-gtk can be used on any slackware or slackware based
 system. 
 
+=====================
+
 # install-upgrade-kernel-gtk
 install-upgrade-kernel-gtk is a gui tool which is written in C using glade and gtk3.
 It is used for installations of slackel or salix on internal disks.
@@ -25,10 +27,10 @@ fakeroot slkbuild -X
 
 To install the package type: 
 for 64bit:
-sudo spkg install-upgrade-kernel-gtk-3.0-x86_64-1dj.txz   
+sudo spkg install-upgrade-kernel-gtk-4.0-x86_64-1dj.txz   
 
 or for 32bit:
-sudo spkg install-upgrade-kernel-gtk-3.0-i586-1dj.txz  
+sudo spkg install-upgrade-kernel-gtk-4.0-i586-1dj.txz  
 
 
 Copyright (C) 2022 Dimitris Tzemos <dijemos@gmail.com>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Generated with glade 3.40.0 -->
+<!-- Generated with glade 3.38.2 -->
 <interface>
   <requires lib="gtk+" version="3.24"/>
   <object class="GtkImage" id="image1">
@@ -125,6 +125,21 @@
                   </packing>
                 </child>
                 <child>
+                  <object class="GtkLabel" id="label3">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                    <property name="label" translatable="yes">Install/Upgrade huge kernel
+Do not run this program for installation on external ssd disk
+or USB stick. Your system will not boot after reboot.</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">False</property>
+                    <property name="padding">12</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
                   <object class="GtkFixed">
                     <property name="visible">True</property>
                     <property name="can-focus">False</property>
@@ -143,6 +158,101 @@
                 <property name="fill">False</property>
                 <property name="padding">12</property>
                 <property name="position">0</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkBox">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+                <property name="spacing">2</property>
+                <child>
+                  <object class="GtkFixed">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="padding">4</property>
+                    <property name="position">0</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkRadioButton" id="huge_kernel">
+                    <property name="label" translatable="yes">huge_kernel</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="active">True</property>
+                    <property name="draw-indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">False</property>
+                    <property name="position">1</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkRadioButton" id="install_huge">
+                    <property name="label" translatable="yes">install_huge</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="draw-indicator">True</property>
+                    <property name="group">upgrade_huge</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">False</property>
+                    <property name="position">2</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkRadioButton" id="upgrade_huge">
+                    <property name="label" translatable="yes">upgrade_huge</property>
+                    <property name="visible">True</property>
+                    <property name="can-focus">True</property>
+                    <property name="receives-default">False</property>
+                    <property name="active">True</property>
+                    <property name="draw-indicator">True</property>
+                  </object>
+                  <packing>
+                    <property name="expand">True</property>
+                    <property name="fill">False</property>
+                    <property name="position">3</property>
+                  </packing>
+                </child>
+                <child>
+                  <object class="GtkFixed">
+                    <property name="visible">True</property>
+                    <property name="can-focus">False</property>
+                  </object>
+                  <packing>
+                    <property name="expand">False</property>
+                    <property name="fill">True</property>
+                    <property name="padding">4</property>
+                    <property name="pack-type">end</property>
+                    <property name="position">4</property>
+                  </packing>
+                </child>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">False</property>
+                <property name="padding">20</property>
+                <property name="position">1</property>
+              </packing>
+            </child>
+            <child>
+              <object class="GtkSeparator">
+                <property name="visible">True</property>
+                <property name="can-focus">False</property>
+              </object>
+              <packing>
+                <property name="expand">False</property>
+                <property name="fill">True</property>
+                <property name="padding">4</property>
+                <property name="position">2</property>
               </packing>
             </child>
             <child>
@@ -221,6 +331,7 @@ or USB stick. Your system will not boot after reboot.</property>
                     <property name="can-focus">True</property>
                     <property name="receives-default">False</property>
                     <property name="draw-indicator">True</property>
+                    <property name="group">huge_kernel</property>
                   </object>
                   <packing>
                     <property name="expand">True</property>
@@ -432,7 +543,7 @@ or USB stick. Your system will not boot after reboot.</property>
     <property name="type-hint">dialog</property>
     <property name="transient-for">mainwindow</property>
     <property name="program-name">install-upgrade-kernel</property>
-    <property name="copyright">Copyright © 2022 - 2024  Dimitris Tzemos</property>
+    <property name="copyright">Copyright © 2022  Dimitris Tzemos</property>
     <property name="license">         GNU GENERAL PUBLIC LICENSE
                        Version 3, 29 June 2007
 
@@ -1108,7 +1219,7 @@ the library.  If this is what you want to do, use the GNU Lesser General
 Public License instead of this License.  But first, please read
 &lt;http://www.gnu.org/philosophy/why-not-lgpl.html&gt;.
 </property>
-    <property name="authors">Copyright © 2022 - 2024  Dimitris Tzemos</property>
+    <property name="authors">Copyright © 2022  Dimitris Tzemos</property>
     <property name="translator-credits" translatable="yes">translator-credits</property>
     <property name="logo-icon-name">install-upgrade-kernel-gtk</property>
     <signal name="delete-event" handler="gtk_widget_hide" swapped="no"/>
