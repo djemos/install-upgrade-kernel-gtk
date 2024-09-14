@@ -1,7 +1,7 @@
 /*
 install-upgrade-kernel-gtk.c from Slackel <http://www.slackel.gr>
 
-Copyright (C) 2022 Dimitris Tzemos <dijemos@gmail.com>
+Copyright (C) 2022-2024 Dimitris Tzemos <dijemos@gmail.com>
 
 This program is free software: you can redistribute it and/or modify it under the terms
 of the GNU General Public License as published by the Free Software Foundation,
@@ -33,10 +33,6 @@ void do_action (gboolean doit) {
 	gchar *commandline, **command, *output, *kernel_action_mode,*kernel_type;
 	
 	GtkWidget *generic_kernel, *install_generic, *upgrade_generic, *viewport;
-		
-	//huge_kernel = (GtkWidget *) gtk_builder_get_object(widgetstree, "huge_kernel");
-	//install_huge = (GtkWidget *) gtk_builder_get_object(widgetstree, "install_huge");
-	//upgrade_huge = (GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_huge");
 	
 	generic_kernel = (GtkWidget *) gtk_builder_get_object(widgetstree, "generic_kernel");
 	install_generic = (GtkWidget *) gtk_builder_get_object(widgetstree, "install_generic");
@@ -45,16 +41,6 @@ void do_action (gboolean doit) {
 	fullpercent = FALSE;
 	pulsebar = TRUE;
 	progressbar_handler_id = g_timeout_add(100, progressbar_handler, NULL);
-		
-	/*if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (huge_kernel))) {
-		kernel_type = g_strdup ("huge") ;
-		if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (upgrade_huge))) {
-			kernel_action_mode = g_strdup ("upgrade") ;
-			}
-		if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (install_huge))) {
-			kernel_action_mode = g_strdup ("install") ;
-			}	
-		} */
 	
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (generic_kernel))) {
 		kernel_type = g_strdup ("generic") ;
@@ -75,10 +61,7 @@ void do_action (gboolean doit) {
 
 		g_spawn_async(NULL, command, NULL, G_SPAWN_SEARCH_PATH|G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL, &pid, NULL);
 		g_child_watch_add(pid, on_process_end, NULL); 
-			
-		//gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "huge_kernel"), FALSE);
-		//gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_huge"), FALSE);
-		//gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_huge"), FALSE);
+
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "generic_kernel"), FALSE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_generic"), FALSE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_generic"), FALSE);
@@ -133,9 +116,6 @@ void on_process_end (GPid thepid, gint status, gpointer data) {
 	gtk_progress_bar_set_fraction(progressbar, 0);
 	gtk_progress_bar_set_text(progressbar, "");
 	
-	//gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "huge_kernel"), TRUE);
-	//gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_huge"), TRUE);
-	//gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_huge"), TRUE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "generic_kernel"), TRUE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_generic"), TRUE);
 	gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_generic"), TRUE);
