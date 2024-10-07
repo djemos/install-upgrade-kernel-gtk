@@ -2,8 +2,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-13 13:33+0300\n"
-"PO-Revision-Date: 2024-09-13 13:52+0300\n"
+"POT-Creation-Date: 2024-10-07 21:50+0300\n"
+"PO-Revision-Date: 2024-10-07 21:51+0300\n"
 "Last-Translator: Dimitris Tzemos <dijemos@gmail.com>\n"
 "Language-Team: \n"
 "Language: el_GR\n"
@@ -11,14 +11,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.0.1\n"
+"X-Generator: Poedit 3.5\n"
 "X-Poedit-Basepath: .\n"
 
-#: src/install-upgrade-kernel-gtk.ui:27 src/install-upgrade-kernel-gtk.ui:429
-#: src/install-upgrade-kernel-gtk.ui:1239
-#: src/install-upgrade-kernel-gtk.desktop.in.h:1
-msgid "install-upgrade-kernel"
-msgstr "εγκατάσταση-ενημέρωση πυρήνα"
+#: src/install-upgrade-kernel-gtk.ui:27
+msgid "Install/Upgrade generic kernel to internal SSD disk"
+msgstr "Εγκατάσταση/Ενημέρωση γενικού πυρήνα σε εσωτερικό SSD δίσκο"
 
 #: src/install-upgrade-kernel-gtk.ui:46
 msgid "_File"
@@ -38,67 +36,75 @@ msgstr "Περί"
 
 #: src/install-upgrade-kernel-gtk.ui:168
 msgid ""
-"Install/Upgrade generic kernel\n"
-"Do not run this program for installation on external ssd disk\n"
-"or USB stick. Your system will not boot after reboot."
+"Install/Upgrade generic kernel to internal SSD disk.\n"
+"\n"
+"Do not use this program for installations to external SSD disk or USB "
+"stick.\n"
+"Your system will not boot after reboot."
 msgstr ""
-"Εγκατάσταση/Ενημέρωση generic πυρήνα\n"
-"Μην εκτελείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο\n"
-"ή USB stick. Το σύστημά σας δεν θα εκκινήσει μετά την επανεκκίνηση."
+"Εγκατάσταση/Ενημέρωση γενικού πυρήνα σε εσωτερικό SSD δίσκο.\n"
+"\n"
+"Μην χρησιμοποιείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο "
+"ή USB stick.\n"
+"Το σύστημά σας δεν θα ξεκινήσει μετά την επανεκκίνηση."
 
-#: src/install-upgrade-kernel-gtk.ui:219
+#: src/install-upgrade-kernel-gtk.ui:221
 msgid "generic_kernel"
-msgstr "generic πυρήνας"
+msgstr "γενικός πυρήνας"
 
-#: src/install-upgrade-kernel-gtk.ui:233
+#: src/install-upgrade-kernel-gtk.ui:235
 msgid "install_generic"
-msgstr "εγκατάσταση generic πυρήνα"
+msgstr "εγκατάσταση γενικού πυρήνα"
 
-#: src/install-upgrade-kernel-gtk.ui:248
+#: src/install-upgrade-kernel-gtk.ui:250
 msgid "upgrade_generic"
-msgstr "ενημέρωση generic πυρήνα"
+msgstr "ενημέρωση γενικού πυρήνα"
 
-#: src/install-upgrade-kernel-gtk.ui:313
+#: src/install-upgrade-kernel-gtk.ui:315
 msgid "Execute"
 msgstr "Εκτέλεση"
 
-#: src/install-upgrade-kernel-gtk.ui:329
+#: src/install-upgrade-kernel-gtk.ui:331
 msgid "Stop"
 msgstr "Διακοπή"
 
-#: src/install-upgrade-kernel-gtk.ui:1112
+#: src/install-upgrade-kernel-gtk.ui:431 src/install-upgrade-kernel-gtk.ui:1245
+#: src/install-upgrade-kernel-gtk.desktop.in.h:1
+msgid "install-upgrade-kernel"
+msgstr "εγκατάσταση-ενημέρωση γενικού πυρήνα σε εσωτερικό SSD δίσκο"
+
+#: src/install-upgrade-kernel-gtk.ui:440
+msgid ""
+"Do not use this program for installations to external SSD disk or USB stick. "
+"Your system will not boot after reboot.\n"
+msgstr ""
+"Μην χρησιμοποιείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο "
+"ή USB stick. Το σύστημά σας δεν θα ξεκινήσει μετά την επανεκκίνηση.\n"
+
+#: src/install-upgrade-kernel-gtk.ui:1118
 msgid "translator-credits"
 msgstr "Δημήτρης Τζέμος <dijemos~at~gmail~dot~com>"
 
-#: src/install-upgrade-kernel-gtk.ui:1147
+#: src/install-upgrade-kernel-gtk.ui:1153
 msgid "Error!"
 msgstr "Σφάλμα!"
 
-#: src/install-upgrade-kernel-gtk.ui:1170
-#: src/install-upgrade-kernel-gtk.ui:1261
+#: src/install-upgrade-kernel-gtk.ui:1176
+#: src/install-upgrade-kernel-gtk.ui:1267
 msgid "OK"
 msgstr "Εντάξει"
 
-#: src/install-upgrade-kernel-gtk.ui:1212
+#: src/install-upgrade-kernel-gtk.ui:1218
 msgid "Error encountered."
 msgstr "Συνέβη σφάλμα."
 
-#: src/install-upgrade-kernel-gtk.ui:1303
+#: src/install-upgrade-kernel-gtk.ui:1309
 msgid "Operation completed."
 msgstr "Η εγκατάσταση τελείωσε."
 
 #: src/install-upgrade-kernel-gtk-kde.desktop.in.h:1
 msgid "install-upgrade-kernel-gtk"
-msgstr "εγκατάσταση-ενημέρωση πυρήνα"
-
-#~ msgid ""
-#~ "Install/Upgrade huge kernel\n"
-#~ "Do not run this program for installation on external ssd disk\n"
-#~ "or USB stick. Your system will not boot after reboot."
-#~ msgstr ""
-#~ "Εγκατάσταση/Ενημέρωση huge πυρήνα\n"
-#~ "Μην εκτελείτε αυτό το πρόγραμμα για εγκατάσταση σε εξωτερικό SSD δίσκο\n"
-#~ "ή USB stick. Το σύστημά σας δεν θα εκκινήσει μετά την επανεκκίνηση."
+msgstr "εγκατάσταση-ενημέρωση γενικού πυρήνα σε εσωτερικό SSD δίσκο"
 
 #~ msgid "huge_kernel"
 #~ msgstr "huge πυρήνας"
@@ -117,6 +123,3 @@ msgstr "εγκατάσταση-ενημέρωση πυρήνα"
 
 #~ msgid "Install/Upgrade huge kernel"
 #~ msgstr "Εγκατάσταση/Ενημέρωση huge πυρήνα"
-
-#~ msgid "Install/Upgrade generic kernel"
-#~ msgstr "Εγκατάσταση/Ενημέρωση generic πυρήνα"

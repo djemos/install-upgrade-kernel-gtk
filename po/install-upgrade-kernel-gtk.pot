@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-09-13 13:33+0300\n"
+"POT-Creation-Date: 2024-10-07 21:50+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -17,10 +17,8 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-#: src/install-upgrade-kernel-gtk.ui:27 src/install-upgrade-kernel-gtk.ui:429
-#: src/install-upgrade-kernel-gtk.ui:1239
-#: src/install-upgrade-kernel-gtk.desktop.in.h:1
-msgid "install-upgrade-kernel"
+#: src/install-upgrade-kernel-gtk.ui:27
+msgid "Install/Upgrade generic kernel to internal SSD disk"
 msgstr ""
 
 #: src/install-upgrade-kernel-gtk.ui:46
@@ -41,49 +39,62 @@ msgstr ""
 
 #: src/install-upgrade-kernel-gtk.ui:168
 msgid ""
-"Install/Upgrade generic kernel\n"
-"Do not run this program for installation on external ssd disk\n"
-"or USB stick. Your system will not boot after reboot."
+"Install/Upgrade generic kernel to internal SSD disk.\n"
+"\n"
+"Do not use this program for installations to external SSD disk or USB "
+"stick.\n"
+"Your system will not boot after reboot."
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:219
+#: src/install-upgrade-kernel-gtk.ui:221
 msgid "generic_kernel"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:233
+#: src/install-upgrade-kernel-gtk.ui:235
 msgid "install_generic"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:248
+#: src/install-upgrade-kernel-gtk.ui:250
 msgid "upgrade_generic"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:313
+#: src/install-upgrade-kernel-gtk.ui:315
 msgid "Execute"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:329
+#: src/install-upgrade-kernel-gtk.ui:331
 msgid "Stop"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:1112
+#: src/install-upgrade-kernel-gtk.ui:431 src/install-upgrade-kernel-gtk.ui:1245
+#: src/install-upgrade-kernel-gtk.desktop.in.h:1
+msgid "install-upgrade-kernel"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:440
+msgid ""
+"Do not use this program for installations to external SSD disk or USB stick. "
+"Your system will not boot after reboot.\n"
+msgstr ""
+
+#: src/install-upgrade-kernel-gtk.ui:1118
 msgid "translator-credits"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:1147
+#: src/install-upgrade-kernel-gtk.ui:1153
 msgid "Error!"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:1170
-#: src/install-upgrade-kernel-gtk.ui:1261
+#: src/install-upgrade-kernel-gtk.ui:1176
+#: src/install-upgrade-kernel-gtk.ui:1267
 msgid "OK"
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:1212
+#: src/install-upgrade-kernel-gtk.ui:1218
 msgid "Error encountered."
 msgstr ""
 
-#: src/install-upgrade-kernel-gtk.ui:1303
+#: src/install-upgrade-kernel-gtk.ui:1309
 msgid "Operation completed."
 msgstr ""
 

@@ -2,8 +2,8 @@
 Encoding=UTF-8
 Type=Application
 
-Name=install-upgrade-kernel-gtk
-Name[el]=Εγκατάσταση-ενημέρωση πυρήνα
+Name=Install-Upgrade generic kernel to internal SSD disk
+Name[el]=Εγκατάσταση-ενημέρωση γενικού πυρήνα σε εσωτερικό δSSD ίσκο
 
 Categories=System
 Exec=kdesu /usr/sbin/install-upgrade-kernel-gtk

@@ -1,7 +1,7 @@
 /*
 install-upgrade-kernel-gtk.c from Slackel <http://www.slackel.gr>
 
-Copyright (C) 2022-2024 Dimitris Tzemos <dijemos@gmail.com>
+Copyright (C) 2022 Dimitris Tzemos <dijemos@gmail.com>
 
 This program is free software: you can redistribute it and/or modify it under the terms
 of the GNU General Public License as published by the Free Software Foundation,
@@ -41,7 +41,7 @@ void do_action (gboolean doit) {
 	fullpercent = FALSE;
 	pulsebar = TRUE;
 	progressbar_handler_id = g_timeout_add(100, progressbar_handler, NULL);
-	
+		
 	if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (generic_kernel))) {
 		kernel_type = g_strdup ("generic") ;
 		if (gtk_toggle_button_get_active (GTK_TOGGLE_BUTTON (upgrade_generic))) {
@@ -61,7 +61,7 @@ void do_action (gboolean doit) {
 
 		g_spawn_async(NULL, command, NULL, G_SPAWN_SEARCH_PATH|G_SPAWN_DO_NOT_REAP_CHILD, NULL, NULL, &pid, NULL);
 		g_child_watch_add(pid, on_process_end, NULL); 
-
+			
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "generic_kernel"), FALSE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "install_generic"), FALSE);
 		gtk_widget_set_sensitive ((GtkWidget *) gtk_builder_get_object(widgetstree, "upgrade_generic"), FALSE);
