@@ -2,7 +2,7 @@
 
 pkgname=install-upgrade-kernel-gtk
 pkgver=4.0
-pkgrel=5dj
+pkgrel=7dj
 source=(install-upgrade-kernel-gtk.tar.bz2)
 docs=("readme" "copying" "authors")
 options=('nosrcpack')
